@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		013E0A9624BD866800E84641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 013E0A9524BD866800E84641 /* Assets.xcassets */; };
 		013E0A9924BD866800E84641 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013E0A9724BD866800E84641 /* LaunchScreen.storyboard */; };
 		013E0AA424BD866800E84641 /* GoodsPriceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013E0AA324BD866800E84641 /* GoodsPriceUITests.swift */; };
+		013E0AB024BD87BA00E84641 /* GoodsPriceUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013E0AAF24BD87BA00E84641 /* GoodsPriceUI.swift */; };
+		7985F3C6E6BEEB3B23DF2E0C /* Pods_GoodsPriceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D06FAB6B44E95FA21F29544 /* Pods_GoodsPriceUITests.framework */; };
+		A6B9247A862A59F23D65B610 /* Pods_GoodsPriceUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB672644D3607417D7169D1A /* Pods_GoodsPriceUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,13 @@
 		013E0A9F24BD866800E84641 /* GoodsPriceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodsPriceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		013E0AA324BD866800E84641 /* GoodsPriceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsPriceUITests.swift; sourceTree = "<group>"; };
 		013E0AA524BD866800E84641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		013E0AAF24BD87BA00E84641 /* GoodsPriceUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsPriceUI.swift; sourceTree = "<group>"; };
+		0317D60B552F149C96B098B3 /* Pods-GoodsPriceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodsPriceUITests.release.xcconfig"; path = "Target Support Files/Pods-GoodsPriceUITests/Pods-GoodsPriceUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6D06FAB6B44E95FA21F29544 /* Pods_GoodsPriceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodsPriceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D410F5B25A558354168AF20 /* Pods-GoodsPriceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodsPriceUITests.debug.xcconfig"; path = "Target Support Files/Pods-GoodsPriceUITests/Pods-GoodsPriceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		89DE3D78476C246EE22E109D /* Pods-GoodsPriceUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodsPriceUI.release.xcconfig"; path = "Target Support Files/Pods-GoodsPriceUI/Pods-GoodsPriceUI.release.xcconfig"; sourceTree = "<group>"; };
+		B9724A3EC3D34A3ED2366ECF /* Pods-GoodsPriceUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodsPriceUI.debug.xcconfig"; path = "Target Support Files/Pods-GoodsPriceUI/Pods-GoodsPriceUI.debug.xcconfig"; sourceTree = "<group>"; };
+		DB672644D3607417D7169D1A /* Pods_GoodsPriceUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodsPriceUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6B9247A862A59F23D65B610 /* Pods_GoodsPriceUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7985F3C6E6BEEB3B23DF2E0C /* Pods_GoodsPriceUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +76,8 @@
 				013E0A8B24BD866500E84641 /* GoodsPriceUI */,
 				013E0AA224BD866800E84641 /* GoodsPriceUITests */,
 				013E0A8A24BD866500E84641 /* Products */,
+				0444D524C4FB098143393E9C /* Pods */,
+				8C1E905D172629A809A0C52A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +93,7 @@
 		013E0A8B24BD866500E84641 /* GoodsPriceUI */ = {
 			isa = PBXGroup;
 			children = (
+				013E0AAE24BD879800E84641 /* UI */,
 				013E0A8C24BD866500E84641 /* AppDelegate.swift */,
 				013E0A8E24BD866500E84641 /* SceneDelegate.swift */,
 				013E0A9024BD866500E84641 /* ViewController.swift */,
@@ -99,6 +114,34 @@
 			path = GoodsPriceUITests;
 			sourceTree = "<group>";
 		};
+		013E0AAE24BD879800E84641 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				013E0AAF24BD87BA00E84641 /* GoodsPriceUI.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0444D524C4FB098143393E9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9724A3EC3D34A3ED2366ECF /* Pods-GoodsPriceUI.debug.xcconfig */,
+				89DE3D78476C246EE22E109D /* Pods-GoodsPriceUI.release.xcconfig */,
+				6D410F5B25A558354168AF20 /* Pods-GoodsPriceUITests.debug.xcconfig */,
+				0317D60B552F149C96B098B3 /* Pods-GoodsPriceUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8C1E905D172629A809A0C52A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB672644D3607417D7169D1A /* Pods_GoodsPriceUI.framework */,
+				6D06FAB6B44E95FA21F29544 /* Pods_GoodsPriceUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 013E0AA824BD866800E84641 /* Build configuration list for PBXNativeTarget "GoodsPriceUI" */;
 			buildPhases = (
+				4C28066A200A9291B4D9AE46 /* [CP] Check Pods Manifest.lock */,
 				013E0A8524BD866500E84641 /* Sources */,
 				013E0A8624BD866500E84641 /* Frameworks */,
 				013E0A8724BD866500E84641 /* Resources */,
+				0745159EE794009B250F5B39 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +168,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 013E0AAB24BD866800E84641 /* Build configuration list for PBXNativeTarget "GoodsPriceUITests" */;
 			buildPhases = (
+				060154E7A52509733EA5625B /* [CP] Check Pods Manifest.lock */,
 				013E0A9B24BD866800E84641 /* Sources */,
 				013E0A9C24BD866800E84641 /* Frameworks */,
 				013E0A9D24BD866800E84641 /* Resources */,
@@ -195,6 +241,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		060154E7A52509733EA5625B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoodsPriceUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0745159EE794009B250F5B39 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodsPriceUI/Pods-GoodsPriceUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodsPriceUI/Pods-GoodsPriceUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoodsPriceUI/Pods-GoodsPriceUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C28066A200A9291B4D9AE46 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoodsPriceUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		013E0A8524BD866500E84641 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -202,6 +312,7 @@
 			files = (
 				013E0A9124BD866500E84641 /* ViewController.swift in Sources */,
 				013E0A8D24BD866500E84641 /* AppDelegate.swift in Sources */,
+				013E0AB024BD87BA00E84641 /* GoodsPriceUI.swift in Sources */,
 				013E0A8F24BD866500E84641 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +471,7 @@
 		};
 		013E0AA924BD866800E84641 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9724A3EC3D34A3ED2366ECF /* Pods-GoodsPriceUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -377,6 +489,7 @@
 		};
 		013E0AAA24BD866800E84641 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89DE3D78476C246EE22E109D /* Pods-GoodsPriceUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,6 +507,7 @@
 		};
 		013E0AAC24BD866800E84641 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D410F5B25A558354168AF20 /* Pods-GoodsPriceUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -415,6 +529,7 @@
 		};
 		013E0AAD24BD866800E84641 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0317D60B552F149C96B098B3 /* Pods-GoodsPriceUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

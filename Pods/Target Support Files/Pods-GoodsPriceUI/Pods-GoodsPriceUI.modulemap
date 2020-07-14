@@ -1,0 +1,6 @@
+framework module Pods_GoodsPriceUI {
+  umbrella header "Pods-GoodsPriceUI-umbrella.h"
+
+  export *
+  module * { export * }
+}
