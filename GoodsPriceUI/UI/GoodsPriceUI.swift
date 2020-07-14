@@ -67,12 +67,24 @@ class GoodsPriceUI: UIView {
         
     }
     
-    public func fillTexts(originalText: String, preferentialText: String) {
+    public func fillTexts(originalText: String, preferentialText: String?) {
         guard let layout = self.layout else { fatalError("需要初始化 layout 对象")}
-        let oas = NSAttributedString(string: originalText, attributes: layout.originalAttributes)
-        let ops = NSAttributedString(string: preferentialText, attributes: layout.preferentialAttributes)
+        let ot = originalText + layout.unit
+        let oas = NSAttributedString(string: ot, attributes: layout.originalAttributes)
         originalLabel.attributedText = oas
-        preferentialLabel.attributedText = ops
+        guard var pt = preferentialText else { return}
+        pt = pt + layout.unit
+        let  pas = NSAttributedString(string: pt, attributes: layout.preferentialAttributes)
+        guard let pi = layout.preferentialImage else {
+            preferentialLabel.attributedText = pas
+            return
+        }
+        let attach = NSTextAttachment()
+        attach.image = pi
+//        attach.bounds = CGRect(x: 0, y: 0, width: 20, height: 12)
+        let pmas = NSMutableAttributedString(attachment: attach)
+        pmas.append(pas)
+        preferentialLabel.attributedText = pmas
     }
     /*
     // Only override draw() if you perform custom drawing.
@@ -90,6 +102,7 @@ struct GoodsPriceUIConfig {
     var originalAttributes: [NSAttributedString.Key:Any]
     var preferentialAttributes: [NSAttributedString.Key:Any]
     var layoutType: GoodsPriceUILayoutType = .layoutOriginalRight
+    var preferentialImage: UIImage?
 }
 
 enum GoodsPriceUILayoutType {

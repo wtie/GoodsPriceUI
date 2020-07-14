@@ -18,11 +18,13 @@ class ViewController: UIViewController {
                   NSAttributedString.Key.strokeColor: UIColor.lightGray,
                   NSAttributedString.Key.strikethroughStyle: NSNumber(value: NSUnderlineStyle.single.rawValue)]
         let pa = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 16),
-                  NSAttributedString.Key.strokeColor: UIColor.red]
-        let layout = GoodsPriceUIConfig(originalAttributes: oa, preferentialAttributes: pa)
+                  NSAttributedString.Key.foregroundColor: UIColor.red]
+        var layout = GoodsPriceUIConfig(originalAttributes: oa, preferentialAttributes: pa)
+        layout.preferentialImage = UIImage(named: "knowledge_market_vip")
+        layout.unit = "¥"
         let ui = GoodsPriceUI(frame: CGRect(x: 100, y: 100, width: 300, height: 80), viewLayout: layout)
         self.view.addSubview(ui)
-        ui.fillTexts(originalText: "500币", preferentialText: "388币")
+        ui.fillTexts(originalText: "500", preferentialText: "388")
     }
 
 
