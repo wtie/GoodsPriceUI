@@ -48,16 +48,20 @@ class GoodsPriceUI: UIView {
         stackView.spacing = 3
         stackView.distribution = .fill
         addSubview(stackView)
-        stackView.addArrangedSubview(originalLabel)
-        stackView.addArrangedSubview(preferentialLabel)
         let layoutType = layout.layoutType
         switch layoutType {
         case .layoutOriginalRight:
             stackView.axis = .horizontal
-        case .layoutOriginalTop,.layoutOriginalBottom:
+            stackView.addArrangedSubview(originalLabel)
+            stackView.addArrangedSubview(preferentialLabel)
+        case .layoutOriginalTop:
             stackView.axis = .vertical
-        default:
-            stackView.axis = .horizontal
+            stackView.addArrangedSubview(originalLabel)
+            stackView.addArrangedSubview(preferentialLabel)
+        case .layoutOriginalBottom:
+            stackView.axis = .vertical
+            stackView.addArrangedSubview(preferentialLabel)
+            stackView.addArrangedSubview(originalLabel)
         }
         
         stackView.snp.makeConstraints { (make) in
@@ -109,8 +113,4 @@ enum GoodsPriceUILayoutType {
     case layoutOriginalRight
     case layoutOriginalTop
     case layoutOriginalBottom
-    case layoutOriginalRightWithIcon
-    case layoutOriginalTopWithIcon
-    case layoutOriginalBottomWithIcon
-    
 }
